@@ -3,7 +3,7 @@ import 'package:fitness/common_widget/round_button.dart';
 import 'package:fitness/common_widget/workout_row.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
+
 import 'package:simple_circular_progress_bar/simple_circular_progress_bar.dart';
 import '../../common/colo_extension.dart';
 import 'activity_tracker_view.dart';
@@ -449,21 +449,21 @@ class _HomeViewState extends State<HomeView> {
                             ]),
                         child: Row(
                           children: [
-                            SimpleAnimationProgressBar(
-                              height: media.width * 0.85,
-                              width: media.width * 0.07,
-                              backgroundColor: Colors.grey.shade100,
-                              foregrondColor: Colors.purple,
-                              ratio: 0.5,
-                              direction: Axis.vertical,
-                              curve: Curves.fastLinearToSlowEaseIn,
-                              duration: const Duration(seconds: 3),
-                              borderRadius: BorderRadius.circular(15),
-                              gradientColor: LinearGradient(
-                                  colors: TColor.primaryG,
-                                  begin: Alignment.bottomCenter,
-                                  end: Alignment.topCenter),
-                            ),
+                            // SimpleAnimationProgressBar(
+                            //   height: media.width * 0.85,
+                            //   width: media.width * 0.07,
+                            //   backgroundColor: Colors.grey.shade100,
+                            //   foregrondColor: Colors.purple,
+                            //   ratio: 0.5,
+                            //   direction: Axis.vertical,
+                            //   curve: Curves.fastLinearToSlowEaseIn,
+                            //   duration: const Duration(seconds: 3),
+                            //   borderRadius: BorderRadius.circular(15),
+                            //   gradientColor: LinearGradient(
+                            //       colors: TColor.primaryG,
+                            //       begin: Alignment.bottomCenter,
+                            //       end: Alignment.topCenter),
+                            // ),
                             const SizedBox(
                               width: 10,
                             ),

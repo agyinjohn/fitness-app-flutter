@@ -1,6 +1,5 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
 
 import '../../common/colo_extension.dart';
 import '../../common/common.dart';
@@ -258,21 +257,21 @@ class _ResultViewState extends State<ResultView> {
                     Stack(
                       alignment: Alignment.center,
                       children: [
-                        SimpleAnimationProgressBar(
-                          height: 20,
-                          width: media.width - 40,
-                          backgroundColor: Colors.grey.shade100,
-                          foregrondColor: Colors.purple,
-                          ratio: 0.62,
-                          direction: Axis.horizontal,
-                          curve: Curves.fastLinearToSlowEaseIn,
-                          duration: const Duration(seconds: 3),
-                          borderRadius: BorderRadius.circular(10),
-                          gradientColor: LinearGradient(
-                              colors: TColor.primaryG,
-                              begin: Alignment.centerLeft,
-                              end: Alignment.centerRight),
-                        ),
+                        // SimpleAnimationProgressBar(
+                        //   height: 20,
+                        //   width: media.width - 40,
+                        //   backgroundColor: Colors.grey.shade100,
+                        //   foregrondColor: Colors.purple,
+                        //   ratio: 0.62,
+                        //   direction: Axis.horizontal,
+                        //   curve: Curves.fastLinearToSlowEaseIn,
+                        //   duration: const Duration(seconds: 3),
+                        //   borderRadius: BorderRadius.circular(10),
+                        //   gradientColor: LinearGradient(
+                        //       colors: TColor.primaryG,
+                        //       begin: Alignment.centerLeft,
+                        //       end: Alignment.centerRight),
+                        // ),
                         Text(
                           "62%",
                           style: TextStyle(
@@ -560,18 +559,18 @@ class _ResultViewState extends State<ResultView> {
                                       ),
                                     ),
 
-                                    SimpleAnimationProgressBar(
-                          height: 10,
-                          width: media.width - 120,
-                          backgroundColor: TColor.primaryColor1,
-                          foregrondColor: const Color(0xffFFB2B1) ,
-                          ratio: (double.tryParse(iObj["diff_per"].toString()) ?? 0.0) / 100.0 ,
-                          direction: Axis.horizontal,
-                          curve: Curves.fastLinearToSlowEaseIn,
-                          duration: const Duration(seconds: 3),
-                          borderRadius: BorderRadius.circular(5),
+                        //             SimpleAnimationProgressBar(
+                        //   height: 10,
+                        //   width: media.width - 120,
+                        //   backgroundColor: TColor.primaryColor1,
+                        //   foregrondColor: const Color(0xffFFB2B1) ,
+                        //   ratio: (double.tryParse(iObj["diff_per"].toString()) ?? 0.0) / 100.0 ,
+                        //   direction: Axis.horizontal,
+                        //   curve: Curves.fastLinearToSlowEaseIn,
+                        //   duration: const Duration(seconds: 3),
+                        //   borderRadius: BorderRadius.circular(5),
                           
-                        ),
+                        // ),
 
                                     SizedBox(
                                       width: 25,

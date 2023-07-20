@@ -142,8 +142,8 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                     const SizedBox(
                       height: 15,
                     ),
-                    const Row(
-                      children: [
+                     Row(
+                      children:const [
                         Expanded(
                           child: TodayTargetCell(
                             icon: "assets/img/water.png",

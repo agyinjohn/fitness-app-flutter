@@ -136,8 +136,8 @@ class _ProfileViewState extends State<ProfileView> {
               const SizedBox(
                 height: 15,
               ),
-              const Row(
-                children: [
+               Row(
+                children: const[
                   Expanded(
                     child: TitleSubtitleCell(
                       title: "180cm",

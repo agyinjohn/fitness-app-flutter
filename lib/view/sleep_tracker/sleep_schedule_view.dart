@@ -2,7 +2,7 @@ import 'package:calendar_agenda/calendar_agenda.dart';
 import 'package:fitness/view/sleep_tracker/sleep_add_alarm_view.dart';
 
 import 'package:flutter/material.dart';
-import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
+
 
 import '../../common/colo_extension.dart';
 import '../../common_widget/round_button.dart';
@@ -265,21 +265,21 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                         Stack(
                           alignment: Alignment.center,
                           children: [
-                            SimpleAnimationProgressBar(
-                              height: 15,
-                              width: media.width - 80,
-                              backgroundColor: Colors.grey.shade100,
-                              foregrondColor: Colors.purple,
-                              ratio: 0.96,
-                              direction: Axis.horizontal,
-                              curve: Curves.fastLinearToSlowEaseIn,
-                              duration: const Duration(seconds: 3),
-                              borderRadius: BorderRadius.circular(7.5),
-                              gradientColor: LinearGradient(
-                                  colors: TColor.secondaryG,
-                                  begin: Alignment.centerLeft,
-                                  end: Alignment.centerRight),
-                            ),
+                            // SimpleAnimationProgressBar(
+                            //   height: 15,
+                            //   width: media.width - 80,
+                            //   backgroundColor: Colors.grey.shade100,
+                            //   foregrondColor: Colors.purple,
+                            //   ratio: 0.96,
+                            //   direction: Axis.horizontal,
+                            //   curve: Curves.fastLinearToSlowEaseIn,
+                            //   duration: const Duration(seconds: 3),
+                            //   borderRadius: BorderRadius.circular(7.5),
+                            //   gradientColor: LinearGradient(
+                            //       colors: TColor.secondaryG,
+                            //       begin: Alignment.centerLeft,
+                            //       end: Alignment.centerRight),
+                            // ),
                             Text(
                               "96%",
                               style: TextStyle(

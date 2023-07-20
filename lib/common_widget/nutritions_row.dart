@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
 
 import '../common/colo_extension.dart';
 
@@ -42,21 +41,21 @@ class NutritionRow extends StatelessWidget {
         const SizedBox(
           height: 4,
         ),
-        SimpleAnimationProgressBar(
-          height: 10,
-          width: media.width - 30,
-          backgroundColor: Colors.grey.shade100,
-          foregrondColor: Colors.purple,
-          ratio: val / maxVal,
-          direction: Axis.horizontal,
-          curve: Curves.fastLinearToSlowEaseIn,
-          duration: const Duration(seconds: 3),
-          borderRadius: BorderRadius.circular(7.5),
-          gradientColor: LinearGradient(
-              colors: TColor.primaryG,
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight),
-        ),
+        // SimpleAnimationProgressBar(
+        //   height: 10,
+        //   width: media.width - 30,
+        //   backgroundColor: Colors.grey.shade100,
+        //   foregrondColor: Colors.purple,
+        //   ratio: val / maxVal,
+        //   direction: Axis.horizontal,
+        //   curve: Curves.fastLinearToSlowEaseIn,
+        //   duration: const Duration(seconds: 3),
+        //   borderRadius: BorderRadius.circular(7.5),
+        //   gradientColor: LinearGradient(
+        //       colors: TColor.primaryG,
+        //       begin: Alignment.centerLeft,
+        //       end: Alignment.centerRight),
+        // ),
       ]),
     );
   }
